@@ -1,5 +1,5 @@
 ## Demo
-If you want to see the demo of this project displayed, you can visit [TGIF Demo](https://albertocurvelo.github.io/Petshop/)
+If you want to see the demo of this project displayed, you can visit [PetShop Demo](https://albertocurvelo.github.io/Petshop/)
 
 ## Description
 Project: PetShop Franco, carried out for evaluative purposes for the bootcamp provided by MindHub
