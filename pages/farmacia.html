@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franco - Farmacia</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon"   href="../assets/img/logo.png" type="image/png"/>
+</head>
+<body>
+  <header class="">
+    <div class="bannerFooter">
+      <nav>
+        <div class="logo"></div>
+        <a href="../index.html">Inicio</a>
+        <a class="active" href="#">Farmacia</a>
+        <a href="juguetes.html">Juguetes</a>
+        <a href="contacto.html">Contáctanos</a>
+      </nav>
+    </div>
+    <div class="ban farmacia"></div>
+</header>
+  <section class="contentArticles" id="farmacia">
+    <h3>Farmacia</h3>
+    <div id="vistaArticulos" class="viewArticles"></div>
+  </section>
+  <div id="modalProducto" class="modal">
+    <div class="modal-content">
+      <h4>Carrito de compras</h4>
+      <div class="contentModalCarro">
+        <div>
+          <h3>Farmacia</h3>
+          <div class="tableMedicinas"></div>
+        </div>
+        <div class="separacion"></div>
+        <div>
+          <h3>Juguetes</h3>
+          <div class="tableJuguetes"></div>
+        </div>
+      </div>
+      <div class="totalCarro"></div>
+      <a id="finalizarCompra" onclick="finishBuy()" class="btn green waves-effect">Finalizar compra</a>
+    </div>
+    <div class="modal-footer">
+      <a id="vaciarCarro" class="modal-close waves-effect btn-flat">Vaciar Carro</a>
+      <a class="modal-close waves-effect btn-flat">Cerrar</a>
+    </div>
+  </div>
+  <div class="shop">
+    <a id="car" class="waves-effect waves-light modal-trigger" data-target="modalProducto">
+      <i class="material-icons">shopping_cart</i>
+    </a>
+    <span id="shopCar" class="badge green"></span>
+  </div>
+  <footer>
+    <div class="fondo2"><div class="logo"><p>Franco</p></div></div>
+    <div class="links">
+      <a href="../index.html">Inicio</a>
+      <a href="#">Farmacia</a>
+      <a href="juguetes.html">Juguetes</a>
+      <a href="contacto.html">Contáctanos</a>
+    </div>
+    <div class="ubicacion">
+      <p>Nuestra ubicación</p>
+      <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.687147907851!2d-58.43256788459159!3d-34.6120717654476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405%20CCB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1609720701313!5m2!1ses-419!2sar" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    </div>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

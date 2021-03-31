@@ -1,0 +1,627 @@
+/*Fuente*/
+@font-face{
+  font-family: animal;
+  src: url('../assets/fonts/Austie.ttf');
+}
+/*Maqueta*/
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background:rgb(136, 136, 136);
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
+header h1{
+  color:lightgreen;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgb(255, 255, 255);
+  font-family: animal;
+  font-size: 4vw;
+  letter-spacing: 1.2vw;
+  margin-top: 15vh;
+  background: -webkit-radial-gradient(circle,rgba(75, 75, 75,0.479),rgba(17, 114, 114, 0.479));
+  border-radius: 1vw;
+  padding: .8vw 0 .8vw .8vw
+}
+.ban{
+  width: 100vw;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bannerFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  /* fallback */
+  background-image: url('../assets/img/b1.jpg');
+  background-repeat: repeat-y;
+  background: -webkit-radial-gradient(circle,rgba(228, 228, 228, 0.5),rgba(136, 136, 136, 0.5));
+}
+nav a{
+  font-weight: bold;
+  min-width: 15%;
+  text-align: center;
+}
+nav a:hover{
+  background-color: rgba(75, 75, 75, 0.712);
+  transition: .7s ease;
+}
+nav a:focus{
+  background-color:rgba(17, 114, 114, 0.596);
+  transition: .7s ease;
+}
+.active{
+  background-color:rgba(17, 114, 114, 0.596);
+}
+.space{
+  width: 20px;
+}
+.logo{
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 100px;
+  max-height: 120px;
+  border: 3px solid rgba(75, 75, 75, 0);
+  background-image: url('../assets/img/logo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo p{
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgb(17, 114, 114);
+  font-family: animal;
+  font-weight: bold;
+  letter-spacing: .2vw;
+  text-align: center;
+  margin-top: 15vh;
+  color:rgb(57, 226, 57);
+}
+.fondo{
+  border: 3px solid rgba(75, 75, 75, 0);
+  height: 125%;
+  padding:1.5vw ;
+  background:rgba(136, 136, 136, 0.87);
+  border-radius: 3.5vw;
+}
+section, footer{
+  width: 100%;
+  padding: 2vh 0 0 0;
+  background-color: aquamarine;
+}
+.contentArticles h3,.contentContacto h3{
+  font-family: animal;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1vw;
+  color: #1a82f7;
+}
+/*Fin maqueta*/
+/*Banners*/
+.inicio{
+  background-image: url('../assets/img/b1.jpg'); 
+}
+.farmacia{
+  background-image: url('../assets/img/b2.jpg');
+}
+.juguetes{
+  background-image: url('../assets/img/b3.webp');
+}
+.contacto{
+  background-image: url('../assets/img/b4.jpg');
+}
+/*Fin Banners*/
+/*index*/
+.homePage{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  padding-top: 8vh;
+}
+.sectionContenido{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5vh;
+  min-height: 30vh;
+}
+.hpIzq,.hpDer{
+  background-image: url('../assets/img/imgIzq2.png');
+  width: 25vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size:90% 80%;
+  background-color: aquamarine;
+  border-radius: 50px;
+  margin: 0 2.5%;
+}
+.hpCenter{
+  width: 40vw;
+  height: 100%;
+  flex:2 0 70%;
+  background: -webkit-radial-gradient(circle,rgba(75, 75, 75, 0.3),rgba(17, 114, 114, 0.3));
+  border:5px solid rgba(17, 114, 114, 0.034);
+  border-radius: 5vw;
+  padding: 0 1.5vw 1.5vw 1.5vw;
+}
+.hpCenter h3,.hpCenter h4{
+  font-family: animal;
+  font-weight: bold;
+  color: #1a82f7;
+}
+.hpCenter p{
+  text-align: justify;
+}
+.hpCenter span{
+  color: rgb(57, 226, 57);
+  text-shadow: 0px 3px 3px rgb(17, 114, 114);
+  font-size: 1.8vw;
+  font-weight: bold;
+  letter-spacing: .5vw;
+  font-family: animal;
+}
+.hpDer{
+  background-image: url('../assets/img/hpDer.png');
+}
+/*fin index*/
+/*farmacia & juguetes*/
+.contentFarmacia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.viewArticles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: auto;
+}
+.card{
+  background-color: rgba(17, 114, 114, 0.733);
+  width: 225px;
+  border-radius: 20px;
+  padding-top: 1vw;
+}
+.card .img{
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  width: 90%;
+  height: 25vh;
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid rgba(17, 114, 114, 0.904);
+}
+.card .img:hover{
+  opacity: .5;
+  transition: 1.5s ease;
+  border-radius: 2vw;
+}
+.card span{
+  font-weight: bold !important;
+  background-color:  rgba(17, 114, 114, 0.753);
+  border-radius: 10px;
+  color: rgb(60, 255, 255);
+}
+.span>span{
+  min-height: 140px;
+  text-align: center;
+  padding: 2vh 1vw;
+}
+.card a{
+  color: rgba(128, 255, 0, 0.514);
+  font-weight: bold;
+}
+.card h5{
+  color:  rgb(119, 250, 32);
+  font-weight: bold;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.card-reveal{
+  display: flex;
+  justify-content: space-around;
+}
+.finalCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fcEnd a{
+  margin: .25vw 1vw;
+}
+.ultimasUnidades{
+  height: 4vh;
+}
+/*fin farmacia & juguetes*/
+/*SuperCart - Vista de articulo completo*/
+.superCard{
+  display: flex;
+  width: 80vw;
+  margin: 5vh;
+  background-color: rgba(17, 114, 114, 0.733);
+  border-radius: 20px;
+  text-align: center;
+}
+.superCard .img{
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45vw;
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid rgba(17, 114, 114, 0.904);
+}
+.superCard .span{
+  max-width: 50vw;
+  margin: 0 auto
+}
+.superCard .span span{
+  flex:1 0 20%;
+  font-size: 2vw;
+  color: rgb(60, 255, 255);
+  font-weight: bold;
+}
+.superCard .span p{
+  padding:0 5vh;
+  font-size: 1.5vw;
+  text-align: center;
+  color: white;
+}
+.superCard .span h5{
+  font-size: 2.5vw;
+  color:  rgb(119, 250, 32);
+}
+.finalCard span{
+  color: rgb(185, 0, 0) !important;
+  background-color: rgba(0,0,0,0);
+}
+.sfCard{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5vh;
+}
+.sfCard a{
+  margin: .25vw 1vw;
+}
+/*final superCard*/
+/*contacto*/
+.contentContacto{
+  padding: 4vh;
+}
+.contentForm{
+  margin: auto;
+  min-width: 620px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 2vw;
+  background-color:rgba(17, 114, 114, 0.904);
+  border-radius: 2vw;
+}
+.contentForm label,.contentForm input, .input-field{
+ color: white !important;
+ background-color: rgba(255, 255, 255, 0);
+}
+.imgForm{
+  background-image: url('../assets/img/contactanos.jpg');
+  background-size: cover;
+  background-position: 20%;
+  background-repeat: no-repeat;
+  min-width: 150px;
+  width: 20vw;
+  height: 300px;
+  border-radius: 2vw;
+}
+.form{
+  min-width: 450px;
+  width: 80vw;
+}
+.select-wrapper ul{
+  color: white;
+  background-color: rgb(17, 114, 114) !important;
+}
+.form textarea{
+  color: white;
+}
+.modal{
+  background-color:  rgb(17, 114, 114);
+  color: white;
+  border-radius: 2vw;
+}
+.modal-footer{
+  background-color:  rgba(31, 179, 179, 0.815) !important;
+  font-weight: bold;
+}
+.modal a{
+  color: white;
+}
+.modal-trigger{
+  font-family: animal;
+  font-weight: bold;
+  color: rgb(119, 250, 32) !important;
+}
+.mensajeEnviado{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.mensajeEnviado img{
+  width: 25vw;
+  height: 15vw;
+  border-radius: 2vw;
+}
+/*fin contacto*/
+/*Shop*/
+.shop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  width: max-content;
+  padding: 1vw;
+  border-radius: 2vw;
+  background-color:rgba(136, 136, 136, 0.815);
+  position: fixed;
+  right: 1vw;
+  bottom: 1vw;
+  z-index: 1;
+}
+.shop i{
+  font-size: 4vw;
+  border-radius: 3vw;
+}
+.badge{
+ margin: 0 !important;
+ color: white !important;
+}
+.toast{
+  font-weight: bold;
+  background-color:rgba(31, 179, 179, 0.925)
+}
+.modal-content{
+  height: 100%;
+}
+.modal-content h4{
+  color: rgb(119, 250, 32);
+  font-weight: bold;
+}
+#modalProducto{
+  width: 90vw !important;
+  text-align: center;
+}
+.contentModalCarro{
+  padding: 2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+.tableMedicinas, .tableJuguetes{
+  background-color: rgba(0, 214, 214, 0.384);
+  padding: .5vw;
+  border-radius: 2vw;
+  font-weight: bold;
+  margin: .4vw;
+}
+.tableMedicinas td,.tableMedicinas th, .tableJuguetes td, .tableJuguetes th{
+  text-align: left;
+}
+.tableMedicinas th,.tableJuguetes th{
+  color: #01ffe6;
+}
+.contentModalCarro .precio{
+  color: rgb(119, 250, 32);
+}
+.separacion{
+  width: 2vw;
+}
+.viewMinArticle,.viewMinCant{
+  display:flex;
+  justify-content: start;
+  align-items: center;
+}
+.viewMinCant p{
+  cursor: pointer;
+  color: white;
+}
+.viewMinArticleImg{
+  min-width: 80px;
+  min-height: 80px;
+  width: 8vw;
+  height: 8vw;
+}
+.viewMinArticleImgView{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 100%;
+  background-color: white;
+}
+.viewMinArticleName{
+  font-size: 14px;
+  padding-left: 1vw;
+}
+.viewMinCantText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(2, 226, 2);
+  font-size: 20px;
+  background-color: white;
+  min-width: 35px;
+  min-height: 35px;
+  border-radius: 10vw;
+  margin: 0 .5vw 0 .5vw;
+}
+.editCant{
+  font-size: 32px;
+  font-weight: bold;
+}
+.addCant:hover{
+  color: rgb(2, 226, 2);
+  transition: 1s ease;
+}
+.deductCant:hover{
+  color: rgb(226, 2, 2);
+  transition: 1s ease;
+}
+/*Fin Shop*/
+/*Gracias*/
+.gracias{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 5vh;
+}
+/*Fin gracias*/
+/*footer*/
+footer{
+  background-color: rgba(17, 114, 114, 0.904);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98vw;
+  padding: 2vw;
+  text-align: center;
+  background: -webkit-radial-gradient(circle,rgba(228, 228, 228, 0.5),rgba(136, 136, 136, 0.5));
+}
+footer p{
+  color: white;
+  font-weight: bold;
+}
+.fondo2{
+  text-align: center;
+  padding: 1vw;
+  height: 90%;
+  border-radius: 3.5vw;
+}
+.ubicacion{
+  flex:1 2 70%;
+}
+.links{
+  flex: 1 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5%;
+}
+.links a,.links a:link,.links a:visited {
+  text-decoration: none;
+  outline:none;
+  color: white;
+  font-weight: bold;
+}
+.links a:hover{
+  color: rgb(119, 250, 32) 
+}
+.links a:focus{
+  color: rgb(83, 173, 22) 
+}
+.mapa{
+  height: 100%;
+  width: 100%;
+}
+.mapa iframe{
+  height: 100%;
+  width: 100%;
+  border:5px solid transparent;
+  border-color:rgba(3, 56, 14, 0.151);
+  border-radius: 50px;
+}
+/*fin footer*/
+/*Retoques*/
+@media(max-width:677px){
+  .logo p{
+    font-size: 4vw;
+  }
+  .fondo{
+    height: 140%;
+  }
+  .card span{
+    font-size: 2.4vw !important;
+  }
+  .hpCenter h3,.hpCenter h4,.hpCenter span{
+    font-size: 4vw !important;
+  }
+  .hpCenter p{
+    font-size: 2.5vw;
+  }
+}
+@media (min-width:678px) and (max-width:991px){
+  .logo p{
+    font-size: 3vw;
+  }
+  .card span{
+    font-size: 1.8vw !important;
+  }
+  .hpCenter h3,.hpCenter h4,.hpCenter span{
+    font-size: 3vw !important;
+  }
+  .hpCenter p{
+    font-size: 1.7vw;
+  }
+}
+@media (min-width:992px) and (max-width:1199px){
+  .logo p{
+    font-size: 2.5vw;
+  }
+  .card span{
+    font-size: 1.4vw !important;
+  }
+  .hpCenter h3,.hpCenter h4,.hpCenter span{
+    font-size: 3vw !important;
+  }
+  .hpCenter p{
+    font-size: 1.5vw;
+  }
+}
+@media (min-width:1200px){
+  .ban{
+    background-size: cover;
+  }
+  .logo p{
+    font-size: 2vw;
+  }
+  .card span{
+    font-size: 1vw !important;
+  }
+  .hpCenter p{
+    font-size: 1.4vw;
+  }
+}
+.inicio{
+  background-position-y: 15%
+}
+.juguetes{
+  background-position-y: 25%
+}
+.farmacia{
+  background-position-y: 55%
+}
+.contacto{
+  background-position-y: 30%
+}
